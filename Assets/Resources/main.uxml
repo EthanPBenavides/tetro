@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/main.uss?fileID=7433441132597879392&amp;guid=8f5699bd6de2e174ab79a9d7178ff601&amp;type=3#main" />
+    <ui:Label text="Tetro" display-tooltip-when-elided="true" name="Title" style="left: 960px; white-space: nowrap; position: absolute; width: 34px; top: 100px; right: auto; bottom: auto; -unity-font: url(&apos;project://database/Assets/Minecraft.ttf?fileID=12800000&amp;guid=bb1a9140f3c9628419b3ff80fe9e027a&amp;type=3#Minecraft&apos;); font-size: 50px; -unity-text-align: upper-center; overflow: visible; flex-basis: auto; flex-direction: row; flex-grow: 0; -unity-font-style: normal;" />
+    <ui:Button text="Start" display-tooltip-when-elided="true" name="Start" style="position: absolute; font-size: 50px; -unity-font: url(&apos;project://database/Assets/Minecraft.ttf?fileID=12800000&amp;guid=bb1a9140f3c9628419b3ff80fe9e027a&amp;type=3#Minecraft&apos;); left: 915px; width: auto; bottom: auto; top: 800px; overflow: visible; align-items: center; justify-content: flex-start;" />
+</ui:UXML>
