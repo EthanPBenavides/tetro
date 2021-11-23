@@ -16,7 +16,6 @@ public class info : MonoBehaviour
         textComponent.text ="Tetris \nScore: " + score + " \nLines: " + totallines + "/" + togo +"\n\nLevel: " + level;
     }
     void Awake() {
-        //t=Mathf.Pow(0.8f-((level-1)*0.007f), level-1);
         t = 1;
         UpdateText();
     }
