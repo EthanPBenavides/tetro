@@ -7,6 +7,7 @@ public class pausestart : MonoBehaviour
 {
     public List<Button> btn = new List<Button>();
     public List<GameObject> children = new List<GameObject>();
+    public ShowNext next;
     private GameObject current;
     private int timeLeft = 3;
 
@@ -24,6 +25,7 @@ public class pausestart : MonoBehaviour
     }
     void startGame(){
         InvokeRepeating("count", 0.0f, 1.0f);
+        next.Start = true;
     }
     void resume(){
         timeLeft = 3;

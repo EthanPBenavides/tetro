@@ -24,9 +24,10 @@ public class Spawner : MonoBehaviour
     public int next;
     public void spawnNext() 
     {
-        if (count >= groups.Count){
+        if (next >= groups.Count ){
             groups.mixBag();
             count = 0;
+            next = 0;
         }
         Instantiate(groups[count], transform.position, Quaternion.identity, parent);
         count++;
