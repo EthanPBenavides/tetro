@@ -8,10 +8,12 @@ public class Group : MonoBehaviour
     float lastFall = 0;
     bool down = false;
     bool up = false;
+    public bool pause = false;
     //public float t;
     // Start is called before the first frame update
     void Start()
     {
+        gameObject.tag="current";
         if (!isValidGridPos()) 
         {
             Debug.Log("GAME OVER");
@@ -31,7 +33,7 @@ public class Group : MonoBehaviour
             }
         }
 
-        if (down == true || Time.time-lastFall >= info.t) 
+        if (down == true || Time.time-lastFall >= info.t && pause == false) 
         {
             transform.position = transform.position + new Vector3(0,-1,0);
             if (isValidGridPos()) {
@@ -45,6 +47,7 @@ public class Group : MonoBehaviour
                 // Spawn next piece
                 FindObjectOfType<Spawner>().spawnNext();
                 // Disable script
+                gameObject.tag="";
                 enabled = false;
             }
             lastFall = Time.time;
